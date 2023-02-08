@@ -1,0 +1,513 @@
+body{
+    margin:0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+header{
+    margin: 20px;
+    width: 80%;
+    height: 300px;
+    background-color: rgba(232, 232, 232, 0.441);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.profile_pic_container{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile_pic_info{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.profile_pic{
+
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 40px;
+    background-size: cover;
+
+}
+
+.changePictureBtn{
+
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: white;
+    color: rgba(11, 153, 182, 0.89);
+    font-weight: bold;
+    border: 2px solid rgba(11, 153, 182, 0.89);
+
+}
+
+.changePictureBtn:hover{
+    color: rgb(4, 67, 80);
+    border: 2px solid rgb(4, 67, 80);
+}
+
+.profile_pic_info div{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.follow{
+
+    border-radius: 10px;
+    background-color: rgba(228, 242, 245, 0.89);
+    color: rgba(11, 153, 182, 0.89);
+    border: 3px solid rgba(43, 145, 165, 0.89);
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 10px;
+    width: 100px;
+    font-size: 14px;
+}
+
+.unfollow{
+
+    border-radius: 10px;
+    background-color: rgba(85, 192, 213, 0.89);
+    border: 3px solid rgba(85, 192, 213, 0.89);
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 10px;
+    width: 100px;
+    font-size: 14px;
+}
+
+.follow:hover{
+    color: rgb(4, 67, 80);
+    border: 3px solid rgb(4, 67, 80);
+}
+
+.changeBio{
+    border: none;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-left: -5px;
+    color: rgba(6, 105, 125, 0.89);
+
+}
+
+.changeBio:hover{
+    color: rgb(4, 67, 80);
+}
+
+.username{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    
+}
+
+.bio{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 90%;
+    margin-top: 10px;
+}
+
+.follow_info{
+    margin-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.number{
+    margin-right: 30px;
+    font-weight: bold;
+    color:rgb(4, 67, 80);
+}
+
+#contents{
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    border: 1px solid rgba(207, 207, 207, 0.692);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+/*post*/
+
+.postsArea{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+
+
+.settings{
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.profile{
+    display: flex;
+}
+
+#settingsForm{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bioContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: -10px;
+}
+
+#newBioBar{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 60%;
+    height: 70px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(194, 192, 192, 0.048);
+    resize: none;
+    display: block;
+    margin-top:20px;
+    background-color: white;
+}
+
+.picContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    border-left: 1px solid rgb(4, 67, 80);
+}
+
+input[type=file]{
+    width:30%;
+    margin-top: 40px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+input[type=file]::file-selector-button {
+    display: none;
+  }
+
+  #shareBtn{
+    padding: 12px;
+    background-color: rgba(11, 153, 182, 0.89);
+    border:none;
+    border-radius: 15px;
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-top:50px;
+  }
+
+#noPicture{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(235, 234, 234, 0.907);
+    margin-top: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#noPicture:hover{
+    background-color: rgba(205, 204, 204, 0.907);
+
+}
+
+  #cancelBtn{
+    padding: 12px;
+    background-color: rgba(255, 135, 135, 0.89);
+    border:none;
+    border-radius: 15px;
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-top:50px;
+    margin-left: 10px;
+  }
+
+  .buttonsContainer{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  #noPostsLabel{
+      display: block;
+  }
+
+  .headerMobile{
+      display: none;
+  }
+
+  @media (max-width: 900px){
+
+    header{
+        margin: 5px;
+        width: calc(95% - 15px);
+        height: auto;
+        background-color: rgba(232, 232, 232, 0.441);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 15px;
+        margin-bottom: 20px;
+    }
+
+    .profile_pic_container{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -30px;
+    }
+    
+    .profile_pic_info{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    .profile_pic{
+    
+        width: 70px;
+        height: 75px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 60px;
+        font-weight: bold;
+        margin-top: 40px;
+        background-size: cover;
+        padding-left: 10px;
+    
+    }
+
+    .changePictureBtn{
+
+        padding: 5px;
+        margin-top: 10px;
+        border-radius: 10px;
+        border: 1px solid rgba(11, 153, 182, 0.89);
+    
+    }
+
+    .profile_pic_info div{
+        margin-top: -5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .username{
+
+        font-size: 30px;
+        
+    }
+
+    .follow{
+
+        border: 2px solid rgba(11, 153, 182, 0.89);
+        margin-top: 10px;
+        margin-left: 20px;
+        padding: 7px;
+        width: 80px;
+    }
+
+    .unfollow{
+
+        border: 2px solid rgba(11, 153, 182, 0.89);
+        margin-top: 10px;
+        margin-left: 20px;
+        padding: 7px;
+        width: 80px;
+    }
+
+
+    .follow_info{
+        font-size: 18px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 5px;
+        margin-bottom: 10px;
+    }
+
+    .postsArea{
+        
+        width: 95%;
+       
+        
+    }
+
+    .headerMobile{
+        height: 70px;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    #logoMobile{
+        font-family: 'MuseoModerno', cursive;
+        color: rgba(11, 153, 182, 0.89);
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    #shareBtn{
+        margin-bottom: 30px;
+
+        margin-top:30px;
+    }
+
+    #cancelBtn{
+        
+        margin-top:30px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+      }
+
+      #settingsForm{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+
+    .picContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    .bioContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid black;
+    }
+
+    #newBioBar{
+        margin-bottom: 30px;
+    }
+
+    label{
+       
+        font-size: 18px;
+        
+    }
+
+    .profile_pic{
+
+       
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 40px;
+        background-size: cover;
+        padding-right: 5px;
+    }
+
+  }
